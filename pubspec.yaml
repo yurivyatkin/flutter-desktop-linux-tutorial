@@ -40,6 +40,7 @@ dev_dependencies:
   build_runner: ^2.1.4
   flutter_test:
     sdk: flutter
+  gql_build: ^0.3.0-alpha+1635110336639
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
