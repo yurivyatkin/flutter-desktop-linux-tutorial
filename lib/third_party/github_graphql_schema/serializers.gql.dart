@@ -1,13 +1,13 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart' show StandardJsonPlugin;
-import 'package:github_graphql_client/src/github_gcl/__generated__/github_queries.data.gql.dart'
+import 'package:github_graphql_client/src/github_gcl/github_queries.data.gql.dart'
     show GViewerDetailData, GViewerDetailData_viewer;
-import 'package:github_graphql_client/src/github_gcl/__generated__/github_queries.req.gql.dart'
+import 'package:github_graphql_client/src/github_gcl/github_queries.req.gql.dart'
     show GViewerDetail;
-import 'package:github_graphql_client/src/github_gcl/__generated__/github_queries.var.gql.dart'
+import 'package:github_graphql_client/src/github_gcl/github_queries.var.gql.dart'
     show GViewerDetailVars;
-import 'package:github_graphql_client/third_party/github_graphql_schema/__generated__/schema.docs.schema.gql.dart'
+import 'package:github_graphql_client/third_party/github_graphql_schema/schema.docs.schema.gql.dart'
     show
         GAcceptEnterpriseAdministratorInvitationInput,
         GAcceptTopicSuggestionInput,
