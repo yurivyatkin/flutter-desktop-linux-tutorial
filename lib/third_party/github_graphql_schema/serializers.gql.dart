@@ -1,7 +1,7 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart' show StandardJsonPlugin;
-import 'package:github_graphql_client/src/github_gql/__generated__/github_queries.data.gql.dart'
+import 'package:github_graphql_client/src/github_gql/github_queries.data.gql.dart'
     show
         GAssignedIssuesData_search_edges_node,
         GAssignedIssuesData,
@@ -30,9 +30,9 @@ import 'package:github_graphql_client/src/github_gql/__generated__/github_querie
         GRepositoriesData_viewer_repositories_nodes_issues,
         GRepositoriesData_viewer_repositories_nodes_owner,
         GRepositoriesData_viewer_repositories_nodes_stargazers;
-import 'package:github_graphql_client/src/github_gql/__generated__/github_queries.req.gql.dart'
+import 'package:github_graphql_client/src/github_gql/github_queries.req.gql.dart'
     show GAssignedIssues, GPullRequests, GRepositories;
-import 'package:github_graphql_client/src/github_gql/__generated__/github_queries.var.gql.dart'
+import 'package:github_graphql_client/src/github_gql/github_queries.var.gql.dart'
     show GAssignedIssuesVars, GPullRequestsVars, GRepositoriesVars;
 import 'package:github_graphql_client/src/github_gql/github_queries.data.gql.dart'
     show GViewerDetailData, GViewerDetailData_viewer;
