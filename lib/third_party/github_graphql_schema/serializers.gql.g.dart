@@ -27,6 +27,20 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GApproveDeploymentsInput.serializer)
       ..add(GApproveVerifiableDomainInput.serializer)
       ..add(GArchiveRepositoryInput.serializer)
+      ..add(GAssignedIssues.serializer)
+      ..add(GAssignedIssuesData.serializer)
+      ..add(GAssignedIssuesData_search.serializer)
+      ..add(GAssignedIssuesData_search_edges.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__asIssue.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__asIssue_author.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__asIssue_comments.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__asIssue_labels.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
+          .serializer)
+      ..add(
+          GAssignedIssuesData_search_edges_node__asIssue_repository.serializer)
+      ..add(GAssignedIssuesData_search_edges_node__base.serializer)
+      ..add(GAssignedIssuesVars.serializer)
       ..add(GAuditLogOrder.serializer)
       ..add(GAuditLogOrderField.serializer)
       ..add(GBase64String.serializer)
@@ -83,6 +97,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GCreateTeamDiscussionCommentInput.serializer)
       ..add(GCreateTeamDiscussionInput.serializer)
       ..add(GDate.serializer)
+      ..add(GDateTime.serializer)
       ..add(GDateTime.serializer)
       ..add(GDeclineTopicSuggestionInput.serializer)
       ..add(GDefaultRepositoryPermissionField.serializer)
@@ -242,8 +257,22 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GPullRequestReviewEvent.serializer)
       ..add(GPullRequestReviewState.serializer)
       ..add(GPullRequestState.serializer)
+      ..add(GPullRequestState.serializer)
       ..add(GPullRequestTimelineItemsItemType.serializer)
       ..add(GPullRequestUpdateState.serializer)
+      ..add(GPullRequests.serializer)
+      ..add(GPullRequestsData.serializer)
+      ..add(GPullRequestsData_viewer.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests_edges.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests_edges_node.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests_edges_node_author.serializer)
+      ..add(
+          GPullRequestsData_viewer_pullRequests_edges_node_comments.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests_edges_node_files.serializer)
+      ..add(GPullRequestsData_viewer_pullRequests_edges_node_repository
+          .serializer)
+      ..add(GPullRequestsVars.serializer)
       ..add(GReactionContent.serializer)
       ..add(GReactionOrder.serializer)
       ..add(GReactionOrderField.serializer)
@@ -275,6 +304,15 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GRepoDestroyAuditEntryVisibility.serializer)
       ..add(GRepoRemoveMemberAuditEntryVisibility.serializer)
       ..add(GReportedContentClassifiers.serializer)
+      ..add(GRepositories.serializer)
+      ..add(GRepositoriesData.serializer)
+      ..add(GRepositoriesData_viewer.serializer)
+      ..add(GRepositoriesData_viewer_repositories.serializer)
+      ..add(GRepositoriesData_viewer_repositories_nodes.serializer)
+      ..add(GRepositoriesData_viewer_repositories_nodes_issues.serializer)
+      ..add(GRepositoriesData_viewer_repositories_nodes_owner.serializer)
+      ..add(GRepositoriesData_viewer_repositories_nodes_stargazers.serializer)
+      ..add(GRepositoriesVars.serializer)
       ..add(GRepositoryAffiliation.serializer)
       ..add(GRepositoryContributionType.serializer)
       ..add(GRepositoryInteractionLimit.serializer)
@@ -347,6 +385,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GTeamRole.serializer)
       ..add(GTopicSuggestionDeclineReason.serializer)
       ..add(GTransferIssueInput.serializer)
+      ..add(GURI.serializer)
       ..add(GURI.serializer)
       ..add(GUnarchiveRepositoryInput.serializer)
       ..add(GUnfollowUserInput.serializer)
@@ -423,6 +462,17 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GViewerDetailVars.serializer)
       ..add(GX509Certificate.serializer)
       ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType(GAssignedIssuesData_search_edges)]),
+          () => new ListBuilder<GAssignedIssuesData_search_edges>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType(
+                GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
+          ]),
+          () => new ListBuilder<
+              GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>())
+      ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType(GCheckAnnotationData)]),
           () => new ListBuilder<GCheckAnnotationData>())
@@ -462,8 +512,18 @@ Serializers _$serializers = (new Serializers().toBuilder()
               BuiltList, const [const FullType(GProjectColumnImport)]),
           () => new ListBuilder<GProjectColumnImport>())
       ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType(GPullRequestsData_viewer_pullRequests_edges)
+          ]),
+          () => new ListBuilder<GPullRequestsData_viewer_pullRequests_edges>())
+      ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(GRefUpdate)]),
           () => new ListBuilder<GRefUpdate>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType(GRepositoriesData_viewer_repositories_nodes)
+          ]),
+          () => new ListBuilder<GRepositoriesData_viewer_repositories_nodes>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(String)]),
           () => new ListBuilder<String>())
